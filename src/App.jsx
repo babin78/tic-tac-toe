@@ -106,6 +106,13 @@ const App = () => {
       <div className="summary">
         <div className="details">
           <h3>
+            Next move:
+            <span>
+              {pointer.currentuser == 1 ? <FaRegCircle /> : <IoMdClose />}
+            </span>
+          </h3>
+
+          <h3>
             current user:
             <span>{pointer.currentuser}</span>
           </h3>
