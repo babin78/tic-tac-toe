@@ -16,14 +16,34 @@
   flex-direction: column;
   align-items: flex-start;
   margin-top: 20px;
+  padding-top: 10px;
   border-top: 2px solid rgba(0, 0, 0, 0.2);
   width: 100%;
   color: black;
   padding-left: 20px;
 }
-.container .summary h3 {
-  font-size: 1rem;
+.container .summary .details h3 {
+  font-size: 1.5rem;
   font-weight: 300;
+}
+.container .summary .details h3 span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+.container .summary .winner h3 {
+  line-height: 60px;
+  font-size: 25px;
+  font-weight: 300;
+}
+.container .summary .winner h3 span {
+  color: darkgreen;
+  font-weight: bolder;
+}
+.container .summary .draw h3 {
+  line-height: 60px;
+  font-size: 25px;
+  font-weight: 300;
+  color: red;
 }
 .container .playzone {
   margin-top: 20px;

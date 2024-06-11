@@ -6,21 +6,23 @@ const getRemainingScore = (nums) => {
   return remaining;
 };
 
-const winingStack = [
-  [0, 1, 2],
-  [3, 4, 5],
-  [6, 7, 8],
-  [0, 3, 6],
-  [2, 5, 8],
-  [0, 4, 8],
-  [2, 4, 6],
-];
+const getWinner = (arraypointer) => {
+  const winingStack = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
+  ];
 
-const getWinner = (winingStack, arraypointer) => {
   let winner = null;
   let remainingBlock = getRemainingScore(arraypointer);
   if (remainingBlock == 9) {
-    return winner;
+    {
+      return winner;
+    }
   } else {
     for (let i = 0; i < winingStack.length; i++) {
       let tmparr = winingStack[i];
@@ -39,7 +41,11 @@ const getWinner = (winingStack, arraypointer) => {
       }
     }
 
-    return winner;
+    if (remainingBlock == 0) {
+      return "X";
+    } else {
+      return winner;
+    }
   }
 };
 
