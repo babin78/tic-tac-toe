@@ -1,0 +1,48 @@
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 95%;
+  background-color: white;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    color: black;
+    padding-left: 20px;
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+  }
+  .playzone {
+    margin-top: 20px;
+    display: grid;
+    color: black;
+    grid-template-columns: auto auto auto;
+    width: 60%;
+    height: 60%;
+    .block {
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      svg {
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
+}
